@@ -1,0 +1,49 @@
+.header {
+	display: table;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: vh(90);
+	padding-right: 4%;
+	padding-left: 2.81%;
+
+	border-bottom: 1px solid #444;
+	background: linear-gradient(to bottom, #363636 0%,#363636 50%,#2f2f2f 51%,#2f2f2f 100%);
+	&__age {
+		position: relative;
+
+		display: table-cell;
+
+		width: 10%;
+		height: 70%;
+
+		text-align: center;
+		vertical-align: middle;
+
+		color: #fff;
+		background-position: center;
+		background-size: auto 70%;
+
+		font-family: "Roboto-Regular";
+		font-size: em(26.66px);
+
+		@extend .icon-age;
+		@media screen and (max-width: 640px) {
+			font-size: em(16.66px/2);
+		}
+		@media screen and (max-width: 480px) {
+			font-size: em(26.66px/2);
+		}
+		@media screen and (max-width: 320px) {
+			font-size: em(26.66px/2.5);
+		}
+	}
+	&__logo {
+		display: table-cell;
+
+		background-position: center;
+		background-size: auto 67.8%;
+
+		@extend .icon-logo;
+	}
+}

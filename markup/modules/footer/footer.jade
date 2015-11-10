@@ -1,0 +1,11 @@
+mixin footer(data)
+	footer.footer
+		.footer-license 
+			label.footer-license__checkbox.checkbox-click-js
+				input(type="checkbox" value="").checkbox-js
+			span Подтверждаю, что люблю мультики, и соглашаюсь с 
+				a(href="#" title="") правилами предоставления услуги
+		.footer__cost Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС. 
+	//- Main scripts. You can replace it, but I recommend you to leave it here
+	script(src='http://yastatic.net/jquery/2.1.4/jquery.min.js')
+	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
